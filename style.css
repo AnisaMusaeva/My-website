@@ -17,6 +17,7 @@ main {
     border-left: 1px solid rgb(70, 5, 155);
     border-right: 1px solid rgb(70, 5, 155);
     height: 1000px;
+    background-image: radial-gradient(circle at top left,white 40%, rgb(200, 157, 240));
 }
 /*подвал-----------------------------------------------------------------*/
 footer {
@@ -29,6 +30,7 @@ footer {
 header {
     height: 150px;
     background-color: rgb(183, 131, 231);
+    background-image: url(image/header.jpg);
 
 }
 h1{
@@ -36,7 +38,7 @@ h1{
     font-size: 50px;
     margin: 0px;
     font-style: italic;
-    color: rgb(250, 248, 248);
+    color: rgb(177, 7, 192);
     
 }
 /*навигация-----------------------------------------------------------------*/
