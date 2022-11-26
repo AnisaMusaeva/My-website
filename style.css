@@ -1,135 +1,346 @@
-/*вся страница-----------------------------------------------------------------*/
-:root {
-    background-color: rgb(255, 255, 255);
-}
+@media screen and (min-width: 320px) {
+    /*-----------------------------------------------------------------*/
+    body {
+        margin: 0;
+    }
 
-html {
-    height: 100%;
-}
+    main {
+        background-image: linear-gradient(white 20%, rgb(200, 157, 240));
+        height: 550px;
+    }
 
-body {
-    margin: 0 auto;
-    height: 100%;
-    max-width: 940px;
-}
-/*-----------------------------------------------------------------*/
-main {
-    border-left: 1px solid rgb(70, 5, 155);
-    border-right: 1px solid rgb(70, 5, 155);
-    height: 1000px;
-    background-image: radial-gradient(circle at top left,white 40%, rgb(200, 157, 240));
-}
-/*подвал-----------------------------------------------------------------*/
-footer {
-    height: 100px;
-    background-color: gray;
-    clear: both;
-    padding: 10px;
-}
-/*шапка-----------------------------------------------------------------*/
-header {
-    height: 150px;
-    background-color: rgb(183, 131, 231);
-    background-image: url(image/header.jpg);
+    img {
+        width: 200px;
+        height: 200px;
+        padding: 10px 20px;
+    }
 
-}
-h1{
-    padding: 40px;
-    font-size: 50px;
-    margin: 0px;
-    font-style: italic;
-    color: rgb(177, 7, 192);
+    footer {
+        height: 70px;
+        background-color: rgb(192, 191, 191);
+        text-align: center;
+        line-height: 30px;
+        padding: 20px 0;
+    }
+
+    /*шапка-----------------------------------------------------------------*/
+    header {
+        height: 50px;
+        background-color: rgb(183, 131, 231);
+        background-image: url(image/header.jpg);
+        background-size: 800px 200px;
+
+    }
+    header img{
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 2px 10px 0px 0px;
+    }
+    h1 {
+        padding: 5px 20px;
+        font-size: 30px;
+        margin: 0px;
+        font-style: italic;
+        color: rgb(177, 7, 192);
+
+    }
+
+    h2 {
+        margin: 0 10px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgb(211, 29, 5);
+    }
+
+    p {
+        margin: 0;
+        padding: 10px 20px;
+    }
     
-}
-/*навигация-----------------------------------------------------------------*/
-nav ul{
-    margin: 0;
-    padding: 10px 0;
-    list-style-type: none;
-    background-color: rgb(137, 67, 155);
-}
-nav li{
-    display: inline;
-    padding: 10px 20px;
-}
-nav a{
-    text-decoration: none;
-    color: rgb(255, 255, 255);
-}
-nav li:hover{
-    background-color: brown;
-}
-.it {
-    background-color: orange;
-}
-/*Семья-----------------------------------------------------------------*/
-img{
-    width: 200px;
-    height: 200px;
-    margin: 0 10px;
-    float: left;
-}
-h2{
-    margin: 10px;
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 2px rgb(211, 29, 5);
-}
-hr{
-    clear: both;
-}
-.dady{
-    margin: 0px 10px 10px 10px;
-}
-/*таблица -----------------------------------------------------------------*/
+    .none{
+        display: none;
+        background-color: rgb(137, 67, 155);
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        text-align: right;
+    }
+    nav img{
+        width: 50px;
+        height: 50px;
+        margin: 0px;
+        padding: 2px 10px 0px 0px;
+    }
+    .none ul {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background-color: rgb(137, 67, 155);
+        
+    }
+    nav li {
+        display: block;
+        padding: 10px 20px;
+    }
 
-table {
-    vertical-align: top;
-    float: left;
-    margin-right: 30px;
+    nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    nav li:hover {
+        background-color: orange;
+    }
+/* таблица--------------------------------------------------------------------------- */
+    table {
+        vertical-align: top;
+        float: left;
+        margin: 10px;
+        border-spacing: 0;
+    }
+
+    td,
+    th {
+        border: 1px solid rgb(155, 12, 221);
+        padding: 10px 3px;
+        text-align: center;
+    }
+
+    caption {
+        padding: 20px;
+        font-weight: bold;
+        color: blueviolet;
+        font-size: 20px;
+        font-style: oblique;
+    }
+     /*Форма--------------------------------------------------------------------------*/
+    form,
+    fieldset {
+        padding: 20px 10px;
+    }
+
+    label {
+        display: block;
+        text-shadow: 2px 2px 2px rgb(150, 6, 145);
+        color: white;
+        margin: 20px 0;
+        font-size: 18px;
+        margin: 0;
+    }
+    input{
+        margin: 10px 0 0 0;
+        font-size: 20px;
+    }
+    input[type=button] {
+        padding: 10px;
+        margin: 10px;
+        background-color: rgb(176, 121, 228);
+        border: 2px solid rgb(90, 6, 87);
+        text-shadow: 2px 2px 2px rgb(150, 6, 145);
+        color: white;
+    }
+
+    input[type=button]:hover {
+        background-color: white;
+    }
+
+    input:focus,
+    textarea:focus {
+        border: 2px solid rgb(202, 8, 196);
+    }
+
+    legend {
+        color: rgb(58, 3, 56);
+        font-size: 22px;
+        font-style: italic;
+    }
+    textarea{
+        width: 280px;
+        margin: -20px 0 0 0;
+    }
 }
 
-td, th {
-    border: 1px solid rgb(155, 12, 221);
-    padding: 19px;
-}
+@media screen and (min-width: 800px){
+/*вся страница-----------------------------------------------------------------*/
+    :root {
+        background-color: rgb(255, 255, 255);
+    }
 
-caption {
-    padding: 10px;
-    font-weight: bold;
-    color: blueviolet;
-    font-size: 18px;
-    font-style: oblique;
-}
+    html {
+        height: 100%;
+    }
 
-table {
-    margin: 20px;
-    border-spacing: 0;
-}
+    body {
+        margin: 0 auto;
+        height: 100%;
+        max-width: 940px;
+    }
 
-/*Форма--------------------------------------------------------------------------*/
-form, fieldset {
-    padding: 20px;
-}
-label{
-    text-shadow: 2px 2px 2px rgb(150, 6, 145);
-    color: white;
-}
-input[type=button]{
-    padding: 10px;
-    margin: 5px 3px 0 0;
-    background-color: rgb(176, 121, 228);
-    border: 2px solid rgb(90, 6, 87);
-    text-shadow: 2px 2px 2px rgb(150, 6, 145);
-    color: white;
-}
-input[type=button]:hover{
-    background-color: white;
-}
-input:focus, textarea:focus{
-    border: 2px solid rgb(202, 8, 196);
-}
-legend{
-    color: rgb(58, 3, 56);
-    font-size: 18px;
-    font-style: italic;
+    /*-----------------------------------------------------------------*/
+    main {
+        border-left: 1px solid rgb(70, 5, 155);
+        border-right: 1px solid rgb(70, 5, 155);
+        height: 1000px;
+        background-image: radial-gradient(circle at top left, white 40%, rgb(200, 157, 240));
+    }
+
+    /*подвал-----------------------------------------------------------------*/
+    footer {
+        height: 100px;
+        background-color: gray;
+        clear: both;
+        padding: 10px;
+    }
+
+    /*шапка-----------------------------------------------------------------*/
+    header {
+        height: 150px;
+        background-color: rgb(183, 131, 231);
+        background-image: url(image/header.jpg);
+        background-size: auto;
+
+    }
+    header img{
+        display: none;
+    }
+    h1 {
+        padding: 40px;
+        font-size: 50px;
+        margin: 0px;
+        font-style: italic;
+        color: rgb(177, 7, 192);
+
+    }
+
+    /*навигация-----------------------------------------------------------------*/
+    .none{
+        display: block;
+        position: relative;
+        height: auto;
+    }
+    nav img{
+        display:none;
+    }
+    .none ul {
+        margin: 0;
+        padding: 10px 0;
+        list-style-type: none;
+        background-color: rgb(137, 67, 155);
+    }
+
+    nav li {
+        display: inline;
+        padding: 10px 20px;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: rgb(255, 255, 255);
+    }
+
+    nav li:hover {
+        background-color: brown;
+    }
+
+    .it {
+        background-color: orange;
+    }
+
+    /*Семья-----------------------------------------------------------------*/
+    img {
+        width: 200px;
+        height: 200px;
+        margin: 0 10px;
+        float: left;
+    }
+
+    h2 {
+        margin: 0 10px 10px 10px;
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 2px rgb(211, 29, 5);
+    }
+
+    hr {
+        clear: both;
+    }
+
+    .dady {
+        margin: 0px 10px 10px 10px;
+    }
+
+    /*таблица -----------------------------------------------------------------*/
+
+    table {
+        vertical-align: top;
+        float: left;
+        margin-right: 30px;
+        margin: 20px;
+        border-spacing: 0;
+    }
+
+    td,
+    th {
+        border: 1px solid rgb(155, 12, 221);
+        padding: 19px;
+        text-align: left;
+    }
+
+    caption {
+        padding: 10px;
+        font-weight: bold;
+        color: blueviolet;
+        font-size: 18px;
+        font-style: oblique;
+    }
+
+
+    /*Форма--------------------------------------------------------------------------*/
+    form,
+    fieldset {
+        padding: 20px;
+    }
+
+    label {
+        text-shadow: 2px 2px 2px rgb(150, 6, 145);
+        color: white;
+        display: inline;
+        font-size: 18px;
+        margin: 0px 5px 0 0;
+    }
+    input{
+        margin: 0;
+        font-size: 14px;
+    }
+
+    input[type=button] {
+        padding: 10px;
+        margin: 5px 3px 0 0;
+        background-color: rgb(176, 121, 228);
+        border: 2px solid rgb(90, 6, 87);
+        text-shadow: 2px 2px 2px rgb(150, 6, 145);
+        color: white;
+    }
+
+    input[type=button]:hover {
+        background-color: white;
+    }
+
+    input:focus,
+    textarea:focus {
+        border: 2px solid rgb(202, 8, 196);
+    }
+
+    legend {
+        color: rgb(58, 3, 56);
+        font-size: 18px;
+        font-style: italic;
+    }
+    textarea{
+        width: 750px;
+        margin: 0;
+    }
 }

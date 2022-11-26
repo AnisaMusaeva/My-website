@@ -12,8 +12,10 @@
 <body>
     <header>
         <h1>Мой сайт</h1>
+        <img onclick="Nav_open()" src="/image/hamburger-menu-grey.png" alt="menu">
     </header>
-    <nav>
+    <nav class="none">
+        <img onclick="Nav_close()" src="/image/hamburger-menu-grey.png" alt="menu">
         <ul>
             <li><a href="index.html">Обо мне</a></li>
             <li><a href="My_Family.html">Моя семья</a></li>
@@ -31,7 +33,7 @@
                 <input type="email" name="email" placeholder="Введите email"><br><br>
                 <label for="tel">Номер телефона:</label>
                 <input type="tel" name="phone" placeholder="Введите номер телефона"><br><br>
-                <label for="message"></label>
+                <label for="message">Сообщение:</label><br><br>
                 <textarea name="message" id="message" cols="100" rows="7" placeholder="Напишите ваше письмо"></textarea><br>
                 <input type="button" name="ok" value="отправить">
                 <input type="button" name="reset" value="сбросить">
@@ -45,6 +47,6 @@
             адрес: ул. 1-я Мелитопольская кв 20
         </address>
     </footer>
+    <script src="/script.js"></script>
 </body>
-
 </html>
